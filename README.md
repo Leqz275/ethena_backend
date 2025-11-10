@@ -3,7 +3,7 @@
 This service aggregates real-time meme coin data from multiple sources, caches it, and provides a REST API and WebSocket connection for live updates.
 
 **Public URL:** [https://YOUR-RENDER-URL.onrender.com/tokens?q=sol]
-**Video Demo:** [Link to your 1-2 min YouTube video]
+**Video Demo:** (https://youtu.be/Z4bHWDAK_n0?si=8udiaa102Q1N3FVQ)
 
 ---
 
@@ -50,7 +50,7 @@ I made several key design decisions to meet the project requirements:
 ## 🚀 How to Run Locally
 
 1.  Clone the repository:
-    `git clone <your-repo-url>`
+    `git clone git@github.com:Leqz275/ethena_backend.git
 2.  Install dependencies:
     `npm install`
 3.  Create a `.env` file in the root. (See `.env.example` if you made one).
@@ -71,3 +71,4 @@ The server will automatically create and use `.memory_cache.json` in the root di
 
 You can find a Postman/Insomnia collection in the root of this repo:
 [Link to your Postman_collection.json file]
+
