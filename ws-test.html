@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <body>
+    <h3>WS Test</h3>
+    <pre id="log"></pre>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script>
+      const log = (m) => {
+        const el = document.getElementById('log');
+        el.textContent += m + "\n";
+      };
+      const socket = io("http://localhost:8080", { transports: ["websocket"] });
+      socket.on("connect", () => log("connected: " + socket.id));
+      socket.on("hello", (d) => log("hello " + JSON.stringify(d)));
+      socket.on("price:update", (d) => log("price:update " + JSON.stringify(d)));
+      socket.on("volume:spike", (d) => log("volume:spike " + JSON.stringify(d)));
+      socket.on("disconnect", () => log("disconnected"));
+    </script>
+  </body>
+</html>

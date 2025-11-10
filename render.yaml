@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: eterna-labs-backend
+    env: node
+    region: frankfurt
+    buildCommand: "npm install"
+    startCommand: "npm run start"
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
